@@ -1,8 +1,9 @@
-path = ('C:\\Users\\vdi-student\\Desktop\\first_project\\rozliczenie.csv):
+path = 'C:\\Users\\vdi-student\\Desktop\\first_project\\rozliczenie.csv'
 mode = 'r'
 with open(path, mode) as plik:
-    content = plik.redlines()
+    content = plik.readlines()
 
-print(dontent)
+print(content)
 for i in range (len(content)):
-    content[1] = content[i].split','
+    content[i] = content[i].split(',')
+print(content)
